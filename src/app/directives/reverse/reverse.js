@@ -15,5 +15,5 @@ angular.module('directives').directive("reverse", function () {
             element.text(myString);
         }
 
-    }
-})
+    };
+});

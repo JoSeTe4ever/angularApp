@@ -18,11 +18,13 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-ngmin');
     grunt.loadNpmTasks('grunt-html2js');
+    grunt.loadNpmTasks('grunt-express');
 
     /**
      * Load in our build configuration file.
      */
     var userConfig = require('./build.config.js');
+    var serverConfig = require('./serverConfig.js');
 
     /**
      * This is the configuration object Grunt uses to give each plugin its
@@ -537,7 +539,7 @@ module.exports = function (grunt) {
         }
     };
 
-    grunt.initConfig(grunt.util._.extend(taskConfig, userConfig));
+    grunt.initConfig(grunt.util._.extend(taskConfig, userConfig, serverConfig));
 
     /**
      * In order to make it safe to just compile or copy *only* what was changed,
@@ -589,6 +591,14 @@ module.exports = function (grunt) {
             return file.match(/\.css$/);
         });
     }
+
+    /***
+     * grunt express server configuration,
+     * I use this task for initialiting everzthing,
+     * grunt server
+     **/
+    grunt.registerTask('server', ['express', 'default']);
+
 
     /**
      * The index.html template includes the stylesheet and javascript sources
