@@ -4,19 +4,24 @@
 
 describe('sandBoxController', function () {
     describe('data', function () {
-        var AppCtrl, $location, $scope;
+        var sandBoxCtrl, $location, $scope, $http;
 
         beforeEach(module('ngBoilerplate'));
 
-        beforeEach(inject(function ($controller, _$location_, $rootScope) {
+        beforeEach(inject(function ($controller, _$location_, $rootScope, _$http_) {
             $location = _$location_;
             $scope = $rootScope.$new();
-            AppCtrl = $controller('AppCtrl', { $location: $location, $scope: $scope });
+            $http = _$http_;
+            sandBoxCtrl = $controller('sandBoxController', { $location: $location, $scope: $scope, $http: $http });
         }));
 
-        it('should pass a dummy test', inject(function () {
-            expect(AppCtrl).toBeTruthy();
+        it('should contain data', inject(function () {
+            // todo mock Http call
+
+            console.log($scope);
+            dump($scope);
         }));
     });
+
 });
 
