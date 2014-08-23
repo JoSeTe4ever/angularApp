@@ -5,7 +5,7 @@ angular.module( 'ngBoilerplate.sandbox', [
     'ui.router',
     'placeholders',
     'ui.bootstrap',
-    'ngGrid'
+    'ui.bootstrap.accordion'
 ])
 
 .config(function config( $stateProvider ) {
