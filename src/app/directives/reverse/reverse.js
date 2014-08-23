@@ -1,6 +1,8 @@
 /**
  * Created by josete on 17/08/2014.
- *   (_*_)
+ * This is a directive that puts the text of a http
+ * component in reverse.
+ *
  */
 
 angular.module('directives').directive("reverse", function () {
