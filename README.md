@@ -17,8 +17,23 @@ Installation
     git clone https://github.com/forIndoorUseOnly/angularApp.git
     ```
 
-4. Execute npm install in the project folder
-5.
+4. Execute in the project folder.
+
+    ```
+    npm install
+    ```
+
+5. Execute in the project folder.
+
+    ```
+    bower install
+    ```
+	
+6. Execute in the project folder.
+
+    ```
+    grunt server
+    ```
 
 
 
