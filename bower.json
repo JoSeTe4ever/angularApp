@@ -6,9 +6,7 @@
     "angular-mocks": "~1.2",
     "bootstrap": "~3.1",
     "angular-bootstrap": "~0.10.0",
-    "angular-ui-router": "~0.2",
-    "ng-grid" : "2.0.1"
-
+    "angular-ui-router": "~0.2"
   },
   "dependencies": {}
 }
