@@ -5,7 +5,7 @@
  *
  */
 
-angular.module('directives').directive("reverse", function () {
+directives.directive("reverse", function () {
     return {
         restrict: 'E',
         link: function postLink(scope, element) {

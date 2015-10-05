@@ -3,7 +3,6 @@
  */
 angular.module( 'ngBoilerplate.sandbox', [
     'ui.router',
-    'placeholders',
     'ui.bootstrap',
     'ui.bootstrap.accordion'
 ])
